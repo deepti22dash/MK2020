@@ -1,0 +1,77 @@
+<html>
+<head>
+
+<script>
+function show()
+{
+	var u= document.getElementById("uname").value;
+	var u1= document.getElementById("u1");
+	
+	var p= document.getElementById("pass").value;
+	var p1= document.getElementById("p1");
+	
+	if (u=="")
+	{
+		u1.inner.HTML="user name can't be balnk;
+	}
+	else
+	{
+		if (p=="")
+		{
+			u1.inner.HTML="";
+			p1.inner.HTML=" password can't be blank ";
+		}
+		else
+		{
+			p1.inner.HTML="";
+			var info= document.getElementById("info");
+			 info.inner.HTML= " WELCOME mr:	"+u;
+		}	
+
+	}
+}		
+</script>
+</head>
+<body>
+<header>
+<h1 align= center > PROJECT </h1>
+</header>
+<nav>
+<div>
+< h4 align= "right style;" "margine-right: 30px;"
+<a href= " signup.html"> SIGN UP</a> 
+<a href= "login.html">log in </a> 
+</h4>
+<hr>
+</div>
+</nav>
+<section>
+	<article>
+	<div style= "width=100%; float:left;">
+	<div style= "width=28%; float:left;">
+	<img src="img23.png" "width=90% height=50%"/>
+	</div>
+	<div>
+		<form method ="" action ="">
+		<fieldset>
+			<legend>Login form </legend>
+		username=:<input type=text id = "uname" name= "username" size= 40 placeholder =" enter username"/>
+		< span id= "u1"  style = "color: blue:">*</span>
+		<br><br>
+		&nbsp; password:<input type=password id = "pass" name= "pass" size= 40 placeholder =" enter password"/>
+			< span id= "p1"  style ="color:blue:">*</span>
+		<br><br>
+		<input type = button onclick="checkname();"value= "login/><hr>
+		<a href= " signup.html"> new user </a>
+		<br><br>
+		< a hef="forgetpassword.html"> forget password ?</a>
+		</fieldset>
+		</form>
+		</div>
+		</div>
+	</article>
+</section>
+<div id ="info"></div>
+</body>
+
+</html>   
